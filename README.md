@@ -1,6 +1,6 @@
 ## gitlab-runner-frontend
 
-This is a custom build of the original gitlab-runner Docker image from https://github.com/ayufan/gitlab-ci-multi-runner. I've just added some fronted tools i need to deploy my stuff.
+This is a custom build of the original gitlab-runner Docker image from https://github.com/ayufan/gitlab-ci-multi-runner. I've simply added some fronted tools i need to deploy my stuff.
 
 Toolchain:
 * [NodeJS](https://nodejs.org)
@@ -18,8 +18,7 @@ gitlab-ci-multi-runner register
 ```
 Follow this process until the end and you're already done and ready to build!
 
-#### All commands
-All commands can be printed out by typing:
+All possible commands can be printed out by typing:
 
 ```bash
 gitlab-ci-multi-runner help
@@ -46,9 +45,13 @@ publish:
     - lftp
 ```
 
-> In Gitlab-CI project settings, i'm creating secret project vars for FTP_USER, FTP_PASS and FTP_HOST.
+> In Gitlab-CI project settings, i'm creating secret project variables for FTP_USER, FTP_PASS and FTP_HOST.
 
 > If you are defining tags like i did in my example, you need to set those tags on your runner via Gitlab-CI settings too. If not, your build status will stay pending!
+
+### Usefull links
+* [gitlab-runner config](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md)
+* [.gitlab-ci.yml](http://doc.gitlab.com/ci/yaml/README.html)
 
 ### ToDo
 * Decrease the size of the image to a minimum
