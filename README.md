@@ -12,7 +12,7 @@ Toolchain:
 * [lftp](http://lftp.yar.ru/)
 
 ### Usage
-Register this gitlab-runner on your Gitlab CI
+Register a gitlab-runner on your Gitlab CI
 ```bash
 gitlab-ci-multi-runner register
 ```
