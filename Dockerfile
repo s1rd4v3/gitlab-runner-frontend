@@ -18,7 +18,7 @@ RUN echo "deb https://packages.gitlab.com/runner/gitlab-ci-multi-runner/ubuntu/ 
 # install node, npm, bower, grunt and sass
 RUN apt-get install -y nodejs && \
     ln -s /usr/bin/nodejs /usr/local/bin/node && \
-    apt-get install -y npm ruby && \
+    apt-get install -y npm ruby lftp && \
 
     sudo su -c "gem install sass" && \
     npm install -g grunt-cli && \
