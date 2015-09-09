@@ -1,3 +1,6 @@
+# credits goes to ayufan (https://github.com/ayufan)
+# original file https://github.com/ayufan/gitlab-ci-multi-runner/blob/v0.5.5/dockerfiles/ubuntu/Dockerfile
+
 FROM ubuntu:14.04
 
 MAINTAINER S1rd4v3
@@ -13,10 +16,8 @@ RUN echo "deb https://packages.gitlab.com/runner/gitlab-ci-multi-runner/ubuntu/ 
     apt-get install -y gitlab-ci-multi-runner
 
 # install node, npm, bower, grunt and sass
-RUN apt-get install -y nodejs && \
+RUN apt-get install -y nodejs npm ruby \
     ln -s /usr/bin/nodejs /usr/local/bin/node && \
-    apt-get install -y npm && \
-    apt-get install -y ruby && \
     sudo su -c "gem install sass" && \
     npm install -g grunt-cli && \
     npm install -g bower
