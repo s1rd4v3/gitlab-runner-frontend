@@ -19,6 +19,10 @@ RUN echo "deb https://packages.gitlab.com/runner/gitlab-ci-multi-runner/ubuntu/ 
 RUN apt-get install -y nodejs && \
     ln -s /usr/bin/nodejs /usr/local/bin/node && \
     apt-get install -y npm ruby lftp && \
+    sudo su gitlab-runner && \
+    # disable verify-certificate for lftp
+    echo "set ssl:verify-certificate false" > ~/.lftprc && \
+    exit && \
 
     sudo su -c "gem install sass" && \
     npm install -g grunt-cli && \
