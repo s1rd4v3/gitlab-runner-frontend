@@ -18,7 +18,7 @@ RUN apt-get install -y nodejs && \
     apt-get install -y npm && \
     apt-get install -y ruby && \
     sudo su -c "gem install sass" && \
-    npm install -g grunt && \
+    npm install -g grunt-cli && \
     npm install -g bower
 
 ADD entrypoint /
