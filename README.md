@@ -1,6 +1,6 @@
 ## gitlab-runner-frontend
 
-This is a custom build of the original gitlab-runner Docker image from https://github.com/ayufan/gitlab-ci-multi-runner. I've simply added some fronted tools i need to deploy my stuff.
+This is a custom build of the original gitlab-runner Docker image from https://gitlab.com/gitlab-org/gitlab-ci-multi-runner. I've simply added some fronted tools i need to deploy my stuff.
 
 Toolchain:
 * [NodeJS](https://nodejs.org)
@@ -10,19 +10,6 @@ Toolchain:
 * [Ruby](https://www.ruby-lang.org)
 * [SASS](http://sass-lang.com/)
 * [lftp](http://lftp.yar.ru/)
-
-### Usage
-Register a gitlab-runner on your Gitlab CI
-```bash
-gitlab-ci-multi-runner register
-```
-Follow this process until the end and you're already done and ready to build!
-
-All possible commands can be printed out by typing:
-
-```bash
-gitlab-ci-multi-runner help
-```
 
 ### .gitlab-ci.yml example
 
@@ -52,6 +39,3 @@ publish:
 ### Usefull links
 * [gitlab-runner config](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md)
 * [.gitlab-ci.yml](http://doc.gitlab.com/ci/yaml/README.html)
-
-### ToDo
-* Decrease the size of the image to a minimum
