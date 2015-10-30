@@ -2,7 +2,7 @@ FROM gitlab/gitlab-runner
 
 MAINTAINER Dave Steck
 
-# install node, npm, bower, grunt and sass
+# install node, npm, bower, grunt, lftp and sass
 RUN apt-get update && \
     apt-get install -y nodejs && \
     ln -s /usr/bin/nodejs /usr/local/bin/node && \
