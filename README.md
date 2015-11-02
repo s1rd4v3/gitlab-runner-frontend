@@ -37,11 +37,13 @@ publish:
 > If you are defining tags like i did in my example, you need to set those tags on your runner via Gitlab-CI settings too. If not, your build status will stay pending!
 
 ### Remember
+You need to perform the following actions as gitlab-runner user ('sudo su gitlab-runner')
 - create ssh keys  for submodules which are linked via ssh urls
 - set .ssh folder permission to 700
 - set id_rsa.pub file permission to 644
 - set id_rsa permission to 600
-- create .lftprc file with 
+- add the ssh key to your user account which has the permission to at least read your submodules
+- create ~/.lftprc file with 'ssl:verify-certificate false' if certificate validation fails
 
 ### Usefull links
 * [gitlab-runner config](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md)
