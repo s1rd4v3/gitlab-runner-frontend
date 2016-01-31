@@ -43,7 +43,7 @@ You need to perform the following actions as gitlab-runner user (`sudo su gitlab
 - set id_rsa.pub file permission to 644
 - set id_rsa permission to 600
 - add the ssh key to your user account which has the permission to at least read your submodules
-- create ~/.lftprc file with `ssl:verify-certificate false` if certificate validation fails
+- create ~/.lftprc file with `set ssl:verify-certificate false` if certificate validation fails
 
 ### Usefull links
 * [gitlab-runner config](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md)
