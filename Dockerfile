@@ -6,6 +6,7 @@ MAINTAINER Dave Steck
 RUN curl -sL https://deb.nodesource.com/setup_4.x | bash - && \
     apt-get install -y nodejs ruby lftp && \
     sudo su -c "gem install sass" && \
+    npm update npm -g && \
     npm install -g grunt-cli && \
     npm install -g bower
 
