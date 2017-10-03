@@ -6,9 +6,11 @@ Toolchain:
 * [NodeJS](https://nodejs.org)
 * [NPM](https://www.npmjs.com/)
 * [Grunt](http://gruntjs.com/)
+* [Gulp](https://gulpjs.com/)
+* [SASS](http://sass-lang.com/)
+* [LESS](http://lesscss.org/)
 * [Bower](http://bower.io/)
 * [Ruby](https://www.ruby-lang.org)
-* [SASS](http://sass-lang.com/)
 * [lftp](http://lftp.yar.ru/)
 
 ### .gitlab-ci.yml example
