@@ -1,6 +1,6 @@
 ## gitlab-runner-frontend
 
-This is a custom build of the original gitlab-runner Docker image from https://gitlab.com/gitlab-org/gitlab-ci-multi-runner. I've simply added some fronted tools i need to deploy my stuff.
+This is a custom build of the original gitlab-runner Docker image from https://gitlab.com/gitlab-org/gitlab-runner. I've simply added some fronted tools i need to deploy my stuff.
 
 Toolchain:
 * [NodeJS](https://nodejs.org)
