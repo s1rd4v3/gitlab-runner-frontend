@@ -1,13 +1,14 @@
 FROM gitlab/gitlab-runner
 
-MAINTAINER Dave Steck
+LABEL maintainer="Dave Steck"
+LABEL description="Gitlab runner with Node, NPM, Bower, Grunt, Gulp, Less, Sass preinstalled"
 
 # install lftp & sudo
 RUN apt-get update && apt-get install lftp sudo -y
 
 
 # Prepare node and npm installation
-RUN curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 # Install nodejs
 RUN sudo apt-get install -y nodejs
 RUN ln -s nodejs node
