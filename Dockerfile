@@ -1,10 +1,10 @@
 FROM gitlab/gitlab-runner
 
 LABEL maintainer="Dave Steck"
-LABEL description="Gitlab runner with Node, NPM, Bower, Grunt, Gulp, Less, Sass preinstalled"
+LABEL description="Gitlab runner with Node, NPM, Bower, Grunt, Gulp, Less, Sass, Lftp and Rsync preinstalled"
 
-# install lftp & sudo
-RUN apt-get update && apt-get install lftp sudo -y
+# install lftp rsync & sudo
+RUN apt-get update && apt-get install lftp rsync sudo -y
 
 
 # Prepare node and npm installation

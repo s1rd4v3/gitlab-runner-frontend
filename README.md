@@ -12,6 +12,7 @@ Toolchain:
 * [Bower](http://bower.io/)
 * [Ruby](https://www.ruby-lang.org)
 * [lftp](http://lftp.yar.ru/)
+* [rsync](https://linux.die.net/man/1/rsync)
 
 ### .gitlab-ci.yml example
 
